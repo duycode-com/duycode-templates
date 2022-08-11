@@ -35,10 +35,8 @@
         <div class="header-menu">
             <div class="container">
                 <ul>
-                    <li><a href="<?php bloginfo('siteurl'); ?>">Home</a></li>
-                    <?php wp_list_categories('title_li=&depth=4&orderby=title&hide_empty=0'); ?>
                     <li>
-                        <a>Other</a>
+                        <a href="<?php bloginfo('siteurl'); ?>">Home</a>
                         <ul class="children">
                             <li class="cat-item">
                                 <a class="topleft" href="<?php bloginfo('siteurl'); ?>/wp-admin" target="_blank" title="Admin"> Login </a>
@@ -51,6 +49,7 @@
                             </li>
                         </ul>
                     </li>
+                    <?php wp_list_categories('title_li=&depth=4&orderby=title&hide_empty=0'); ?>
                     <form id="searchform" method="get" action="<?php bloginfo('home'); ?>">
                         <input class="search-input" name="s" id="s" type="text" placeholder="Type to search..." />
                         <input class="search-submit" type="submit" value="Search" />
