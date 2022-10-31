@@ -1,0 +1,40 @@
+.folder-code {
+    border: 1px solid gray;
+    box-shadow: 0px 3px 15px #999;
+    width: 100%;
+
+    .title {
+        background: linear-gradient(rgb(238, 251, 255), rgb(220, 245, 255));
+        font-weight: 700;
+        padding: 8px 16px;
+        color: #505050;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 220px minmax(0, 1fr);
+        gap: 8px;
+
+        .tree {
+            padding: 8px 8px;
+            border-right: 1px solid gray;
+            border-top: 1px solid gray;
+            line-height: 1.7;
+
+            details {
+                width: 100%;
+                cursor: pointer;
+                padding-left: 16px;
+                summary {
+                    margin-left: -16px;
+                }
+            }
+        }
+
+        .panel {
+            padding: 8px 16px;
+            border-left: 1px solid gray;
+            border-top: 1px solid gray;
+        }
+    }
+}
